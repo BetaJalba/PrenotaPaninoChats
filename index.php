@@ -1,7 +1,18 @@
 <?php
 session_start();
-// Reset eventuali sessioni precedenti
-session_unset();
+
+$visitsFile = __DIR__ . '/data/visits.txt';
+if (file_exists($visitsFile)) {
+    $visits = file_get_contents($visitsFile);
+    echo $visits;
+
+    $temp = intval($visits) + 1;
+    $visits = strval($temp);
+
+    $file = fopen($visitsFile, 'w');
+    fwrite($file, $visits);
+    fclose($file);
+}
 ?>
 <!doctype html>
 <html lang="it">
