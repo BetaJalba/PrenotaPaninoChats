@@ -1,0 +1,48 @@
+=== SCONTRINO PANINO ===
+Cliente: Liam Zanfardini
+Telefono: 3519784467
+Data richiesta: 2025-10-28T11:19
+Pane: Ciabatta
+Dimensione: Large
+Ingredienti: Prosciutto
+Note: 
+Prezzo finale: €7.00
+Sconto Fidelity: nessuno
+=========================
+
+=== SCONTRINO PANINO ===
+Cliente: Liam Zandarfini
+Telefono: 10749623
+Data richiesta: 1222-12-21T22:22
+Pane: Ciabatta
+Dimensione: Large
+Ingredienti: Formaggio, Salsa
+Note: Extra mozzarrella
+Prezzo finale: €7.50
+Sconto Fidelity: nessuno
+=========================
+
+=== SCONTRINO PANINO ===
+Cliente: Iris Lagnarini
+Telefono: 3773262524
+Data richiesta: 2025-10-29T07:20
+Pane: Baguette
+Dimensione: Large
+Ingredienti: Prosciutto, Formaggio, Insalata, Salsa
+Note: Sei grassa
+Prezzo finale: €8.50
+Sconto Fidelity: nessuno
+=========================
+
+=== SCONTRINO PANINO ===
+Cliente: Liam Zandarfini
+Telefono: 2340985732409
+Data richiesta: 2222-02-22T22:22
+Pane: Baguette
+Dimensione: Large
+Ingredienti: Formaggio
+Note: Extra mozzarella
+Prezzo finale: €5.60
+Sconto Fidelity: 20% (1R15_N3GR4)
+=========================
+
