@@ -13,6 +13,8 @@ if (file_exists($visitsFile)) {
     fwrite($file, $visits);
     fclose($file);
 }
+
+
 ?>
 <!doctype html>
 <html lang="it">
@@ -74,5 +76,38 @@ if (file_exists($visitsFile)) {
       </div>
     </form>
   </main>
+
+  <?php
+      $username = 'root';
+      $password = '';
+      $endpoint = 'localhost';
+      
+      $conn = new mysqli($endpoint, $username, $password);
+
+      if ($conn->connect_error) {
+          die('Connection failed: ' . $conn -> connect_error);
+      }
+
+      echo 'Connected successfully <br>';
+
+      $conn -> select_db('paninoteca');
+
+      $query = 'SELECT * FROM `utenti`';
+      $stmt = $conn -> prepare($query);
+      $stmt -> execute();
+      $result = $stmt -> get_result();
+
+      if ($result != false)
+          echo 'Succesful statement execute! <br>';
+
+
+      $row = $result -> fetch_row();
+      
+
+      $stmt -> close();
+      $conn -> close();
+
+      echo 'Statement & Connection closed!';
+  ?>
 </body>
 </html>
