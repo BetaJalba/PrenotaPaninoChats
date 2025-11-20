@@ -100,9 +100,12 @@ if (file_exists($visitsFile)) {
       if ($result != false)
           echo 'Succesful statement execute! <br>';
 
-
-      $row = $result -> fetch_row();
       
+
+      while ($row = $result -> fetch_row()) {
+          print_r($row);
+          echo '<br>';
+      };
 
       $stmt -> close();
       $conn -> close();
